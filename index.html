@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Welcome back</title>
+</head>
+
+<body>
+    <div class="navbar">
+    <h1>Letscon.com</h1>
+    <div class="hamburger" onclick="toggleMenu()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+    <div class="menu">
+      <div class="close-button" onclick="toggleMenu()">✕</div>
+      <a href="index.html">Home</a>
+      <a href="#">About Us</a>
+      <a href="#">My Account</a>
+      <a href="./love-match/index.html">Love Match</a>
+    </div>
+  </div>
+
+  <!--Top pi network users Slides -->
+  <h2>Top Pioneers</h2>
+  <div class="slideshow-container">
+    <!-- Slides -->
+
+    <div class="mySlides slide-active">
+      <img src="./image/user1.jpg" alt="User 1">
+      <div class="slide-text">Top User 1</div>
+    </div>
+
+    <div class="mySlides">
+      <img src="./image/user2.jpg" alt="User 2">
+      <div class="slide-text">Top User 2</div>
+    </div>
+
+    <div class="mySlides">
+      <img src="./image/user3.jpg" alt="User 3">
+      <div class="slide-text">Top User 3</div>
+    </div>
+
+    <div class="mySlides">
+      <img src="./image/user4.jpg" alt="User 4">
+      <div class="slide-text">Top User 4</div>
+    </div>
+
+    <!-- Navigation buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+
+
+  <!-- Footer -->
+
+  <footer>
+    <a href="./index.html" class="footer-item" onclick="changeText(this)">
+      <span class="symbol">🏠</span>
+      <span class="text">Home</span>
+    </a>
+    <a href="./love-match/index.html" class="footer-item" onclick="changeText(this)">
+      <span class="symbol">💑</span>
+      <span class="text">Love</br> Match</span>
+    </a>
+    <a href="./love-match/index.html" class="footer-item" onclick="changeText(this)">
+      <span class="symbol">👫</span>
+      <span class="text">Meet</br>Someone</span>
+    </a>
+    <a href="./love-match/index.html" class="footer-item" onclick="changeText(this)">
+      <span class="symbol">👤</span>
+      <span class="text">Profile</span>
+    </a>
+  </footer>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
